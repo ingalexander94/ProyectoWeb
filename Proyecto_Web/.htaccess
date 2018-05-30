@@ -1,0 +1,6 @@
+Options ALL -Indexes
+#para poder utilizar rewriterule
+RewriteEngine on
+#convierte  las palabras en variables get
+RewriteRule ^(\w+)$ index.php?ubicacion=$1
+
